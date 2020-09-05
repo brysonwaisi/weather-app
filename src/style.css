@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    background-image: url('/images/weather.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(111, 7, 209, 0.3), rgba(156, 104, 253, 0.6));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 13px 13px;
+}
+
+header input {
+    width: 100%;
+    max-width: 290px;
+    padding: 10px 13px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px 0px 15px 0px;
+    border-bottom: 3px solid #68044f;
+    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+header input:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 20px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.current .temp {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 9px rgba(0, 0, 0, 0.4);
+}
+
+.current .temp span {
+    font-weight: 500;
+}
+
+.current .weather {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 16px;
+    text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.current .fluctuation {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/*smartphones*/
+
+@media (min-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+/*medium screens*/
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+
+
+/*large screens*/
+
+@media (min-width: 1001px) {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+    }
+}

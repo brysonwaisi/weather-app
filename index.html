@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#0000CD">
+    <meta name="description" content="Up to date weather information">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="images/weather2.jpg">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <label for='input.search-box'></label>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Enter a city name" />
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">Nairobi, KE</div>
+                <div class="date">Saturday 5 September 2020</div>
+            </section>
+            <div class="current">
+                <div class="temp">18<span>°c</span></div>
+                <div class="weather">Cloudy</div>
+                <div class="fluctuation">16°c / 19°c</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./src/app.js"></script>
+</body>
+
+
+</html>
